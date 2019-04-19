@@ -19,7 +19,7 @@ public class TableRenderer extends DefaultTableCellRenderer
     {
             super.getTableCellRendererComponent(table, value, selected, focused, row, column);
             if (column == 0 || column == 6)
-                    setBackground(new Color(220,220,255));
+                    setBackground(new Color(180,220,255));
             else
                     setBackground(Color.WHITE);
             setBorder(null);
