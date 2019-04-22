@@ -7,7 +7,7 @@ import java.awt.Color;
 import facebook.FBView;
 import sms.*;
 
-public class calendarModel
+public class CalendarModel
 {
     private SMSView sm;
     private FBView fb;
@@ -15,7 +15,7 @@ public class calendarModel
     private DateFormat v = new SimpleDateFormat("mm/dd/yyyy");
     private Date d = new Date();
     private String[] sndate= v.format(d).split("[/]");
-    public calendarModel()
+    public CalendarModel()
     {
         fb = new FBView();
         fb.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);

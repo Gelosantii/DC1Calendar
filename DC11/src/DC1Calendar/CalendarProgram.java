@@ -8,8 +8,8 @@ import java.util.*;
 
 public class CalendarProgram
 {
-    private calendarView view;
-    private calendarModel model;
+    private CalendarView view;
+    private CalendarModel model;
 
     /**** Day Components ****/
     private int yearBound, monthBound, dayBound, yearToday, monthToday;
@@ -27,14 +27,14 @@ public class CalendarProgram
     private JTable calendarTable;
     private DefaultTableModel modelCalendarTable;
 
-    public CalendarProgram(calendarView view, calendarModel model){
+    public CalendarProgram(CalendarView view, CalendarModel model){
             this.view = view;
             this.model = model;
     }
 
     public void run()
     {
-            view = new calendarView(this);
+            view = new CalendarView(this);
             model.refreshCalendar(this, monthBound, yearBound);
             initNotification();
     }
@@ -262,22 +262,22 @@ public class CalendarProgram
             this.modelCalendarTable = modelCalendarTable;
     }
     
-    public calendarView getView()
+    public CalendarView getView()
     {
             return view;
     }
     
-    public void setView(calendarView view)
+    public void setView(CalendarView view)
     {
             this.view = view;
     }
     
-    public calendarModel getModel()
+    public CalendarModel getModel()
     {
             return model;
     }
     
-    public void setModel(calendarModel model)
+    public void setModel(CalendarModel model)
     {
             this.model = model;
     }

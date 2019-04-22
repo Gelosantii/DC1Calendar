@@ -5,14 +5,14 @@ import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 
-public class calendarView
+public class CalendarView
 {
-    public calendarView()
+    public CalendarView()
     {
 
     }
 
-    public calendarView(CalendarProgram program)
+    public CalendarView(CalendarProgram program)
     {
         try
         {
